@@ -3,7 +3,7 @@ document.getElementById('wrapper01').innerHTML = "<hr>Select your chemicals<br><
 document.getElementById('wrapper02').innerHTML = "<input id='calciumNitrate' type='checkbox' value='Calcium Nitrate'> <label> Calcium Nitrate</label><br> <input id='mpk' type='checkbox' value='MPK'> <label> MPK</label><br><input id='epsom' type='checkbox' value='Epsom Salt'> <label> Epsom Salt</label><br><input id='jacks' type='checkbox' value='Jacks'> <label> Jacks</label> <br> <input id='trace' type='checkbox' value='Trace Minerals'> <label> Trace Minerals</label><hr>";
 // choose ppm
 document.getElementById('wrapper03').innerHTML = "Enter PPM <br><br>";
-document.getElementById('wrapper04').innerHTML = "Nitrogen <br> <input id='nitrogen'> <br><br> Calcium <br> <input id='calcium'> <br><br> Potassium <br> <input id='potassium'> <br><br> Phosphorus <br> <input id='phosporus'> <br><br> Iron <br> <input id='iron'><br><br>";
+document.getElementById('wrapper04').innerHTML = "Nitrogen <br> <input id='nitrogen'> <br><br> Phosphorus <br> <input id='phosporus'> <br><br> Potassium <br> <input id='potassium'> <br><br> Calcium <br> <input id='calcium'> <br><br> Magnesium <br> <input id='magnesium'><br><br>Iron <br> <input id='iron'><br><br>";
 // Results
 function results() {
   // Calcium Nitrate
