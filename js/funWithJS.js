@@ -6,7 +6,7 @@ document.getElementById('wrapper01').innerHTML = "<hr>Gallons <br> <input id='ga
 
 // choose ppm
 document.getElementById('wrapper03').innerHTML = "<hr>Enter PPM <br><br>";
-document.getElementById('wrapper04').innerHTML = "Nitrogen <br> <input id='nitrogen'> <br><br> Phosphorus <br> <input id='phosporus'> <br><br> Potassium <br> <input id='potassium'> <br><br> Calcium <br> <input id='calcium'> <br><br> Magnesium <br> <input id='magnesium'><br><br>Iron <br> <input id='iron'><br><br>";
+document.getElementById('wrapper04').innerHTML = "Nitrogen <br> <input id='nitrogen' type='number'> <br><br> Phosphorus <br> <input id='phosporus' type='number'> <br><br> Potassium <br> <input id='potassium' type='number'> <br><br> Calcium <br> <input id='calcium' type='number'> <br><br> Magnesium <br> <input id='magnesium' type='number'><br><br>Iron <br> <input id='iron' type=number><br><br>";
 // Results
 function results() {
   //Gallons
