@@ -11,34 +11,33 @@ document.getElementById('wrapper04').innerHTML = "Nitrogen <br> <input id='nitro
 function results() {
   //Gallons
   var gallons = document.getElementById('gallons').value;
-  // Calcium Nitrate
-  var calNit = "Calcium Nitrate";
-  // var grCalNit = 2;
-  //var ppmCal = getElementById('calcium');
-  var ppmNit = document.getElementById('nitrogen').value/41*gallons;
+  var calNit, epsom, mpk, trace;
+  calNit = { name: "Calcium Nitrate",
+             nitrogen: 41,
+             calcium: 50};
+  epsom = { name: "Epsom Salt",
+             magnesium: 25,
+             sulfate: 33};
+  mpk = { name: "MPK",
+            phosphorus: 60,
+            potassium: 75};
+  pekacid = { name: "PeKacid",
+              phosphorus: 69,
+              potassium: 44};
+  potNit = { name: "Potassium Nitrate",
+              nitrogen: 36,
+              potassium: 101};
+  ammSul = { name: "Ammonium Sulfate",
+              nitrogen: 56,
+              Sulfate: 64};
+  trace = { name: "Trace Elements",
+              iron: 19.8};
 
-  // Epsom Salt
-  var epsom = "Epsom Salt";
-  // var grEpsom = 1
-  var ppmEpsom = (document.getElementById("magnesium").value/25)*gallons;
-  // mpk
-  var mpk = "MPK";
-  // var grMPK = 0
-  var ppmMPK = (document.getElementById("potassium").value/75)*gallons;
+  return calNit + ": " + (document.getElementById('nitrogen')/calNit.nitrogen) * gallons +
+   "\n" + mpk + ": " + (document.getElementById('potassium')/mpk.potassium) * gallons +
+   "\n" + epsom + ": " + (document.getElementById('nmagnesium')/epsom.magnesium) * gallons +
+   "\n" + trace + ": " + (document.getElementById('iron')/trace.iron) * gallons;
 
-  // jacks
-  var jacks = "Jacks";
-  var grJacks = 0
-  // trace elements
-  var trace = "Trace";
-  // var grTrace = 0
-  var ppmTrace = (document.getElementById("iron").value/19.8)*gallons;
- // dialog box contents
-  return calNit + ": " + ppmNit +
-   "\n" + mpk + ": " + ppmMPK +
-   "\n" + epsom + ": " + ppmEpsom +
-   "\n" + trace + ": " + ppmTrace;
-}
 
 //dialog function
 function dialog() {
