@@ -11,7 +11,7 @@ document.getElementById('wrapper04').innerHTML = "Nitrogen <br> <input id='nitro
 function results() {
   //Gallons
   var gallons = document.getElementById('gallons').value;
-  var calNit, epsom, mpk, trace;
+  var calNit, epsom, mpk, ammSul, potNit, pekacid, trace;
   calNit = { name: "Calcium Nitrate",
              nitrogen: 41,
              calcium: 50};
@@ -33,12 +33,12 @@ function results() {
   trace = { name: "Trace Elements",
               iron: 19.8};
 
-  return calNit + ": " + (document.getElementById('nitrogen')/calNit.nitrogen) * gallons +
-   "\n" + mpk + ": " + (document.getElementById('potassium')/mpk.potassium) * gallons +
-   "\n" + epsom + ": " + (document.getElementById('nmagnesium')/epsom.magnesium) * gallons +
-   "\n" + trace + ": " + (document.getElementById('iron')/trace.iron) * gallons;
+  return calNit.name + ": " + (document.getElementById('nitrogen').value/calNit.nitrogen) * gallons +
+   "\n" + mpk.name + ": " + (document.getElementById('potassium').value/mpk.potassium) * gallons +
+   "\n" + epsom.name + ": " + (document.getElementById('magnesium').value/epsom.magnesium) * gallons +
+   "\n" + trace.name + ": " + (document.getElementById('iron').value/trace.iron) * gallons;
 
-
+}
 //dialog function
 function dialog() {
   alert('Grams\n' + results());
