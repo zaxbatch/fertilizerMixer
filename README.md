@@ -2,5 +2,5 @@
 mpk fertilizer calculator
 
 This app is my attempt to enhance my skills in JavaScipt. 
-Currently, it is only a prototype, but I plan to make it usable.
-Feel free to contribute!
+Version is now usable. 
+Future Plans to select chemicals, tweak solutions, and merge with fine tuner.
