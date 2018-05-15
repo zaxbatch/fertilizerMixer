@@ -108,7 +108,7 @@ function ppmCalc() {
   ppmN = ((document.getElementById('adjustCalNit').value*41) + (document.getElementById('adjustPotNit').value*36) + (document.getElementById('adjustAmmSul').value*56))/gallons;
   ppmP = ((document.getElementById('adjustMPK').value*60) + (document.getElementById('adjustPekacid').value*69))/gallons;
   ppmK = ((document.getElementById('adjustMPK').value*75) + (document.getElementById('adjustPotNit').value*101) + (document.getElementById('adjustPekacid').value*44))/gallons;
-  ppmCa = (document.getElementById(('adjustCalNit').value*50))/gallons;
+  ppmCa = (document.getElementById('adjustCalNit').value*50)/gallons;
   ppmMg = (document.getElementById('adjustEpsom').value*25)/gallons;
   ppmS = ((document.getElementById('adjustAmmSul').value*64) + (document.getElementById('adjustEpsom').value*33))/gallons
   ppmFe = (document.getElementById('adjustTrace').value*19.8)/gallons;
